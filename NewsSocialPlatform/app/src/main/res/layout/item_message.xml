@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Use item_message_sent.xml and item_message_received.xml based on message type -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Sent message layout (inflated programmatically) -->
+    <!-- Received message layout (inflated programmatically) -->
+    <!-- Use: include layout="@layout/item_message_sent" or include layout="@layout/item_message_received" -->
+
+</FrameLayout>

@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- App Name -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="app_name">اخباري</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Common Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="loading">جارٍ التحميل…</string>
+    <string name="please_wait">يرجى الانتظار…</string>
+    <string name="error">حدث خطأ</string>
+    <string name="error_occurred">حدث خطأ، يرجى المحاولة مرة أخرى</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="cancel">إلغاء</string>
+    <string name="confirm">تأكيد</string>
+    <string name="save">حفظ</string>
+    <string name="delete">حذف</string>
+    <string name="edit">تعديل</string>
+    <string name="close">إغلاق</string>
+    <string name="back">رجوع</string>
+    <string name="search">بحث</string>
+    <string name="no_data">لا توجد بيانات</string>
+    <string name="no_connection">لا يوجد اتصال بالإنترنت</string>
+    <string name="check_connection">تحقق من اتصالك بالإنترنت وحاول مرة أخرى</string>
+    <string name="no_results">لا توجد نتائج</string>
+    <string name="success">تم بنجاح</string>
+    <string name="done">تم</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="ok">حسناً</string>
+    <string name="submit">إرسال</string>
+    <string name="next">التالي</string>
+    <string name="previous">السابق</string>
+    <string name="skip">تخطي</string>
+    <string name="finish">إنهاء</string>
+    <string name="or">أو</string>
+    <string name="and">و</string>
+    <string name="see_all">عرض الكل</string>
+    <string name="more">المزيد</string>
+    <string name="less">أقل</string>
+    <string name="refresh">تحديث</string>
+    <string name="update">تحديث</string>
+    <string name="copied">تم النسخ</string>
+    <string name="copy">نسخ</string>
+    <string name="share">مشاركة</string>
+    <string name="send">إرسال</string>
+    <string name="clear">مسح</string>
+    <string name="apply">تطبيق</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="view">عرض</string>
+    <string name="download">تحميل</string>
+    <string name="upload">رفع</string>
+    <string name="file">ملف</string>
+    <string name="image">صورة</string>
+    <string name="video">فيديو</string>
+    <string name="photo">صورة</string>
+    <string name="camera">كاميرا</string>
+    <string name="gallery">المعرض</string>
+    <string name="remove">إزالة</string>
+    <string name="add">إضافة</string>
+    <string name="required">مطلوب</string>
+    <string name="optional">اختياري</string>
+    <string name="character_limit">الحد الأقصى للرموز</string>
+    <string name="off">إيقاف</string>
+    <string name="on">تشغيل</string>
+    <string name="unknown">غير معروف</string>
+    <string name="just_now">الآن</string>
+    <string name="minutes_ago">دقائق مضت</string>
+    <string name="hours_ago">ساعات مضت</string>
+    <string name="yesterday">أمس</string>
+    <string name="today">اليوم</string>
+    <string name="tomorrow">غداً</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Authentication Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">إنشاء حساب</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="enter_email">أدخل بريدك الإلكتروني</string>
+    <string name="enter_password">أدخل كلمة المرور</string>
+    <string name="enter_confirm_password">أكد كلمة المرور</string>
+    <string name="enter_name">أدخل اسمك</string>
+    <string name="enter_username">أدخل اسم المستخدم</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="enter_phone">أدخل رقم الهاتف</string>
+    <string name="login_with_google">تسجيل الدخول بحساب Google</string>
+    <string name="login_with_phone">تسجيل الدخول برقم الهاتف</string>
+    <string name="dont_have_account">ليس لديك حساب؟</string>
+    <string name="already_have_account">لديك حساب بالفعل؟</string>
+    <string name="create_account">إنشاء حساب جديد</string>
+    <string name="sign_up">تسجيل</string>
+    <string name="sign_in">دخول</string>
+    <string name="terms_agreement">بالإنشاء أنت توافق على %1$s و %2$s</string>
+    <string name="terms_of_service">شروط الخدمة</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="email_verification">تأكيد البريد الإلكتروني</string>
+    <string name="verification_sent">تم إرسال رابط التأكيد إلى بريدك الإلكتروني</string>
+    <string name="check_email">تحقق من بريدك الإلكتروني واضغط على رابط التأكيد</string>
+    <string name="resend_verification">إعادة إرسال رابط التأكيد</string>
+    <string name="verification_success">تم تأكيد بريدك الإلكتروني بنجاح</string>
+    <string name="verification_failed">فشل تأكيد البريد الإلكتروني</string>
+    <string name="reset_password_sent">تم إرسال رابط إعادة التعيين إلى بريدك</string>
+    <string name="invalid_email">بريد إلكتروني غير صالح</string>
+    <string name="invalid_password">كلمة المرور ضعيفة (6 أحرف على الأقل)</string>
+    <string name="password_mismatch">كلمتا المرور غير متطابقتين</string>
+    <string name="invalid_phone">رقم هاتف غير صالح</string>
+    <string name="user_not_found">المستخدم غير موجود</string>
+    <string name="wrong_password">كلمة المرور خاطئة</string>
+    <string name="account_disabled">تم تعطيل هذا الحساب</string>
+    <string name="too_many_requests">محاولات كثيرة، حاول لاحقاً</string>
+    <string name="login_success">تم تسجيل الدخول بنجاح</string>
+    <string name="register_success">تم إنشاء الحساب بنجاح</string>
+    <string name="logout_confirm">هل تريد تسجيل الخروج؟</string>
+    <string name="logout_message">سيتم تسجيل خروجك من التطبيق</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="password_changed">تم تغيير كلمة المرور بنجاح</string>
+    <string name="delete_account">حذف الحساب</string>
+    <string name="delete_account_confirm">هل أنت متأكد من حذف حسابك؟ لا يمكن التراجع عن هذا الإجراء</string>
+    <string name="delete_account_warning">سيتم حذف جميع بياناتك بشكل نهائي</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Navigation Labels -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_explore">اكتشف</string>
+    <string name="nav_notifications">الإشعارات</string>
+    <string name="nav_messages">الرسائل</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    <string name="nav_create">إنشاء</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_admin">الإدارة</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Home Screen -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="home_title">الرئيسية</string>
+    <string name="home_welcome">مرحباً بك في اخباري</string>
+    <string name="feed_empty">لا توجد منشورات حتى الآن</string>
+    <string name="feed_empty_hint">كن أول من ينشر محتوى!</string>
+    <string name="stories">القصص</string>
+    <string name="add_story">إضافة قصة</string>
+    <string name="view_story">عرض القصة</string>
+    <string name="trending_now">الأكثر رواجاً</string>
+    <string name="suggested_for_you">مقترح لك</string>
+    <string name="latest_posts">أحدث المنشورات</string>
+    <string name="breaking_news">عاجل</string>
+    <string name="pinned_posts">منشورات مثبتة</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Post Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="create_post">إنشاء منشور</string>
+    <string name="edit_post">تعديل المنشور</string>
+    <string name="delete_post">حذف المنشور</string>
+    <string name="delete_post_confirm">هل تريد حذف هذا المنشور؟</string>
+    <string name="post_deleted">تم حذف المنشور</string>
+    <string name="post_updated">تم تحديث المنشور</string>
+    <string name="post_created">تم نشر المنشور بنجاح</string>
+    <string name="post_content">محتوى المنشور</string>
+    <string name="write_something">اكتب شيئاً…</string>
+    <string name="add_media">إضافة وسائط</string>
+    <string name="add_photo">إضافة صورة</string>
+    <string name="add_video">إضافة فيديو</string>
+    <string name="add_poll">إضافة استطلاع</string>
+    <string name="post_privacy">خصوصية المنشور</string>
+    <string name="privacy_public">عام</string>
+    <string name="privacy_followers">المتابعين فقط</string>
+    <string name="privacy_private">خاص</string>
+    <string name="pin_post">تثبيت المنشور</string>
+    <string name="unpin_post">إلغاء التثبيت</string>
+    <string name="post_pinned">تم تثبيت المنشور</string>
+    <string name="post_unpinned">تم إلغاء تثبيت المنشور</string>
+    <string name="archive_post">أرشفة المنشور</string>
+    <string name="archived_posts">المنشورات المؤرشفة</string>
+    <string name="copy_link">نسخ الرابط</string>
+    <string name="link_copied">تم نسخ الرابط</string>
+    <string name="share_post">مشاركة المنشور</string>
+    <string name="share_via">مشاركة عبر</string>
+    <string name="save_post">حفظ المنشور</string>
+    <string name="unsave_post">إلغاء الحفظ</string>
+    <string name="saved_posts">المنشورات المحفوظة</string>
+    <string name="report_post">الإبلاغ عن المنشور</string>
+    <string name="post_details">تفاصيل المنشور</string>
+    <string name="post_comments">التعليقات</string>
+    <string name="post_shares">المشاركات</string>
+    <string name="post_views">المشاهدات</string>
+    <string name="comments">تعليقات</string>
+    <string name="add_comment">أضف تعليقاً…</string>
+    <string name="write_comment">اكتب تعليقاً…</string>
+    <string name="reply">رد</string>
+    <string name="replies">الردود</string>
+    <string name="reply_to">رد على %1$s</string>
+    <string name="delete_comment">حذف التعليق</string>
+    <string name="delete_comment_confirm">هل تريد حذف هذا التعليق؟</string>
+    <string name="comment_deleted">تم حذف التعليق</string>
+    <string name="no_comments">لا توجد تعليقات</string>
+    <string name="comment_sent">تم إرسال التعليق</string>
+    <string name="like">إعجاب</string>
+    <string name="liked">أعجبني</string>
+    <string name="unlike">إزالة الإعجاب</string>
+    <string name="likes">إعجابات</string>
+    <string name="repost">إعادة النشر</string>
+    <string name="quote_post">اقتباس</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Reaction Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="reaction_like">إعجاب</string>
+    <string name="reaction_love">حب</string>
+    <string name="reaction_haha">هههه</string>
+    <string name="reaction_wow">واو</string>
+    <string name="reaction_sad">حزين</string>
+    <string name="reaction_angry">غاضب</string>
+    <string name="react">تفاعل</string>
+    <string name="reactions">التفاعلات</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Profile Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="profile">الملف الشخصي</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="profile_updated">تم تحديث الملف الشخصي</string>
+    <string name="change_photo">تغيير الصورة</string>
+    <string name="change_cover">تغيير الغلاف</string>
+    <string name="remove_photo">إزالة الصورة</string>
+    <string name="bio">نبذة</string>
+    <string name="website">الموقع الإلكتروني</string>
+    <string name="location">الموقع</string>
+    <string name="followers">متابعين</string>
+    <string name="following">متابَعين</string>
+    <string name="posts">المنشورات</string>
+    <string name="total_likes">إعجابات</string>
+    <string name="total_views">مشاهدات</string>
+    <string name="follow">متابعة</string>
+    <string name="unfollow">إلغاء المتابعة</string>
+    <string name="following_you">يتابعك</string>
+    <string name="follows_you">يتابعك</string>
+    <string name="follow_request_sent">تم إرسال طلب المتابعة</string>
+    <string name="accept">قبول</string>
+    <string name="reject">رفض</string>
+    <string name="follow_requests">طلبات المتابعة</string>
+    <string name="mutual_friends">أصدقاء مشتركون</string>
+    <string name="verification">التوثيق</string>
+    <string name="verified_account">حساب موثّق</string>
+    <string name="request_verification">طلب التوثيق</string>
+    <string name="verification_pending">طلب التوثيق قيد المراجعة</string>
+    <string name="verification_approved">تم توثيق حسابك</string>
+    <string name="verification_rejected">تم رفض طلب التوثيق</string>
+    <string name="verification_status">حالة التوثيق</string>
+    <string name="join_date">تاريخ الانضمام</string>
+    <string name="profile_posts">المنشورات</string>
+    <string name="profile_media">الوسائط</string>
+    <string name="profile_likes">الإعجابات</string>
+    <string name="profile_saved">المحفوظات</string>
+    <string name="profile_archived">الأرشيف</string>
+    <string name="block_user">حظر المستخدم</string>
+    <string name="unblock_user">إلغاء حظر المستخدم</string>
+    <string name="blocked_users">المستخدمون المحظورون</string>
+    <string name="mute_user">كتم المستخدم</string>
+    <string name="unmute_user">إلغاء كتم المستخدم</string>
+    <string name="muted_users">المستخدمون المكتومون</string>
+    <string name="user_blocked">تم حظر المستخدم</string>
+    <string name="user_unblocked">تم إلغاء حظر المستخدم</string>
+    <string name="user_muted">تم كتم المستخدم</string>
+    <string name="user_unmuted">تم إلغاء كتم المستخدم</string>
+    <string name="report_user">الإبلاغ عن المستخدم</string>
+    <string name="my_posts">منشوراتي</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Message / Chat Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="messages">الرسائل</string>
+    <string name="chat">المحادثة</string>
+    <string name="chats">المحادثات</string>
+    <string name="group_chat">مجموعة</string>
+    <string name="create_group">إنشاء مجموعة</string>
+    <string name="group_name">اسم المجموعة</string>
+    <string name="group_members">الأعضاء</string>
+    <string name="add_members">إضافة أعضاء</string>
+    <string name="remove_member">إزالة عضو</string>
+    <string name="leave_group">مغادرة المجموعة</string>
+    <string name="delete_group">حذف المجموعة</string>
+    <string name="type_message">اكتب رسالة…</string>
+    <string name="send_message">إرسال</string>
+    <string name="message_sent">تم إرسال الرسالة</string>
+    <string name="message_deleted">تم حذف الرسالة</string>
+    <string name="voice_message">رسالة صوتية</string>
+    <string name="record_voice">تسجيل صوتي</string>
+    <string name="recording">جارٍ التسجيل…</string>
+    <string name="stop_recording">إيقاف التسجيل</string>
+    <string name="play_voice">تشغيل الصوت</string>
+    <string name="image_message">صورة</string>
+    <string name="video_message">فيديو</string>
+    <string name="file_message">ملف</string>
+    <string name="reply_message">رد على الرسالة</string>
+    <string name="forward_message">إعادة توجيه</string>
+    <string name="delete_message">حذف الرسالة</string>
+    <string name="delete_for_me">حذف لي</string>
+    <string name="delete_for_everyone">حذف للجميع</string>
+    <string name="message_seen">تمت القراءة</string>
+    <string name="message_delivered">تم التسليم</string>
+    <string name="online">متصل</string>
+    <string name="offline">غير متصل</string>
+    <string name="last_seen">آخر ظهور</string>
+    <string name="typing">يكتب…</string>
+    <string name="no_messages">لا توجد رسائل</string>
+    <string name="start_conversation">ابدأ محادثة</string>
+    <string name="new_message">رسالة جديدة</string>
+    <string name="search_messages">البحث في الرسائل</string>
+    <string name="unread_messages">رسائل غير مقروءة</string>
+    <string name="mark_as_read">تعليم كمقروء</string>
+    <string name="pin_chat">تثبيت المحادثة</string>
+    <string name="unpin_chat">إلغاء تثبيت المحادثة</string>
+    <string name="mute_chat">كتم المحادثة</string>
+    <string name="unmute_chat">إلغاء كتم المحادثة</string>
+    <string name="you">أنت</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Notification Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="notifications">الإشعارات</string>
+    <string name="notification_like">أعجب بمنشورك</string>
+    <string name="notification_comment">علّق على منشورك</string>
+    <string name="notification_follow">بدأ بمتابعتك</string>
+    <string name="notification_message">أرسل لك رسالة</string>
+    <string name="notification_mention">أشار إليك</string>
+    <string name="notification_share">شارك منشورك</string>
+    <string name="notification_reaction">تفاعل مع منشورك</string>
+    <string name="notification_verification">تم تحديث حالة توثيقك</string>
+    <string name="notification_system">إشعار من النظام</string>
+    <string name="notification_new_follower">متابع جديد</string>
+    <string name="notification_comment_reply">رد على تعليقك</string>
+    <string name="notification_group_invite">دعوة للانضمام إلى مجموعة</string>
+    <string name="notification_post_approved">تم قبول منشورك</string>
+    <string name="notification_post_rejected">تم رفض منشورك</string>
+    <string name="mark_all_read">تعيين الكل كمقروء</string>
+    <string name="no_notifications">لا توجد إشعارات</string>
+    <string name="all_notifications">الكل</string>
+    <string name="mentions">الإشارات</string>
+    <string name="likes_notifications">الإعجابات</string>
+    <string name="push_notifications">إشعارات الدفع</string>
+    <string name="notification_settings">إعدادات الإشعارات</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Search / Explore Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="explore">اكتشف</string>
+    <string name="search_hint">ابحث عن أشخاص، هاشتاجات، أخبار…</string>
+    <string name="search_users">الأشخاص</string>
+    <string name="search_posts">المنشورات</string>
+    <string name="search_hashtags">الهاشتاجات</string>
+    <string name="search_news">الأخبار</string>
+    <string name="recent_searches">عمليات البحث الأخيرة</string>
+    <string name="clear_search_history">مسح سجل البحث</string>
+    <string name="trending">الأكثر رواجاً</string>
+    <string name="trending_topics">المواضيع الرائجة</string>
+    <string name="trending_hashtags">الهاشتاجات الرائجة</string>
+    <string name="trending_news">الأخبار الرائجة</string>
+    <string name="popular">الأكثر شعبية</string>
+    <string name="categories">التصنيفات</string>
+    <string name="category_politics">سياسة</string>
+    <string name="category_sports">رياضة</string>
+    <string name="category_tech">تكنولوجيا</string>
+    <string name="category_entertainment">ترفيه</string>
+    <string name="category_science">علوم</string>
+    <string name="category_health">صحة</string>
+    <string name="category_business">أعمال</string>
+    <string name="category_culture">ثقافة</string>
+    <string name="category_world">عالم</string>
+    <string name="suggested_users">مستخدمون مقترحون</string>
+    <string name="discover_people">اكتشف أشخاصاً</string>
+    <string name="no_search_results">لا توجد نتائج للبحث</string>
+    <string name="try_different_search">جرب بحثاً مختلفاً</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Settings Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="settings">الإعدادات</string>
+    <string name="general">عام</string>
+    <string name="appearance">المظهر</string>
+    <string name="theme">السمة</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="theme_system">تلقائي (النظام)</string>
+    <string name="language">اللغة</string>
+    <string name="language_arabic">العربية</string>
+    <string name="language_english">English</string>
+    <string name="font_size">حجم الخط</string>
+    <string name="font_small">صغير</string>
+    <string name="font_medium">متوسط</string>
+    <string name="font_large">كبير</string>
+    <string name="font_extra_large">كبير جداً</string>
+    <string name="privacy_settings">الخصوصية</string>
+    <string name="privacy">الخصوصية</string>
+    <string name="private_account">حساب خاص</string>
+    <string name="private_account_desc">فقط المتابعون يمكنهم رؤية منشوراتك</string>
+    <string name="show_online_status">إظهار حالة الاتصال</string>
+    <string name="show_last_seen">إظهار آخر ظهور</string>
+    <string name="show_read_receipts">إظهار إيصال القراءة</string>
+    <string name="allow_tagging">السماح بالإشارة</string>
+    <string name="who_can_message">من يمكنه مراسلتي</string>
+    <string name="everyone">الجميع</string>
+    <string name="followers_only">المتابعون فقط</string>
+    <string name="nobody">لا أحد</string>
+    <string name="notification_settings_title">إعدادات الإشعارات</string>
+    <string name="push_notifications_enabled">إشعارات الدفع</string>
+    <string name="email_notifications">إشعارات البريد الإلكتروني</string>
+    <string name="notify_likes">إشعارات الإعجابات</string>
+    <string name="notify_comments">إشعارات التعليقات</string>
+    <string name="notify_follows">إشعارات المتابعين</string>
+    <string name="notify_messages">إشعارات الرسائل</string>
+    <string name="notify_mentions">إشعارات الإشارات</string>
+    <string name="account_settings">إعدادات الحساب</string>
+    <string name="security">الأمان</string>
+    <string name="two_factor_auth">المصادقة الثنائية</string>
+    <string name="login_activity">نشاط تسجيل الدخول</string>
+    <string name="active_sessions">الجلسات النشطة</string>
+    <string name="backup">النسخ الاحتياطي</string>
+    <string name="backup_data">نسخ البيانات احتياطياً</string>
+    <string name="restore_data">استعادة البيانات</string>
+    <string name="backup_success">تم النسخ الاحتياطي بنجاح</string>
+    <string name="restore_success">تمت استعادة البيانات بنجاح</string>
+    <string name="delete_data">حذف البيانات</string>
+    <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
+    <string name="cache_cleared">تم مسح ذاكرة التخزين المؤقت</string>
+    <string name="storage_usage">استخدام التخزين</string>
+    <string name="data_usage">استخدام البيانات</string>
+    <string name="about">حول التطبيق</string>
+    <string name="version">الإصدار</string>
+    <string name="rate_app">تقييم التطبيق</string>
+    <string name="help_center">مركز المساعدة</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="terms">الشروط والأحكام</string>
+    <string name="privacy_policy_title">سياسة الخصوصية</string>
+    <string name="open_source_licenses">تراخيص المصدر المفتوح</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Admin Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="admin_panel">لوحة الإدارة</string>
+    <string name="admin_dashboard">لوحة التحكم</string>
+    <string name="admin_users">إدارة المستخدمين</string>
+    <string name="admin_posts">إدارة المنشورات</string>
+    <string name="admin_reports">البلاغات</string>
+    <string name="admin_analytics">الإحصائيات</string>
+    <string name="admin_settings">إعدادات التطبيق</string>
+    <string name="admin_verification_requests">طلبات التوثيق</string>
+    <string name="total_users">إجمالي المستخدمين</string>
+    <string name="total_posts">إجمالي المنشورات</string>
+    <string name="total_reports">إجمالي البلاغات</string>
+    <string name="active_users">المستخدمون النشطون</string>
+    <string name="ban_user">حظر مستخدم</string>
+    <string name="unban_user">إلغاء حظر مستخدم</string>
+    <string name="suspend_user">تعليق مستخدم</string>
+    <string name="user_banned">تم حظر المستخدم</string>
+    <string name="user_unbanned">تم إلغاء حظر المستخدم</string>
+    <string name="approve_post">قبول المنشور</string>
+    <string name="reject_post">رفض المنشور</string>
+    <string name="feature_post">تمييز المنشور</string>
+    <string name="admin_announcements">الإعلانات</string>
+    <string name="create_announcement">إنشاء إعلان</string>
+    <string name="send_notification_all">إرسال إشعار للجميع</string>
+    <string name="app_config">إعدادات التطبيق</string>
+    <string name="maintenance_mode">وضع الصيانة</string>
+    <string name="force_update">تحديث إجباري</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Report Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="report">إبلاغ</string>
+    <string name="report_reason">سبب الإبلاغ</string>
+    <string name="report_spam">رسائل مزعجة</string>
+    <string name="report_harassment">تحرش أو مضايقة</string>
+    <string name="report_hate_speech">خطاب كراهية</string>
+    <string name="report_violence">عنف أو تهديد</string>
+    <string name="report_nudity">محتوى إباحي</string>
+    <string name="report_false_news">أخبار كاذبة</string>
+    <string name="report_copyright">انتهاك حقوق الملكية</string>
+    <string name="report_other">سبب آخر</string>
+    <string name="report_details">تفاصيل إضافية (اختياري)</string>
+    <string name="report_submit">إرسال البلاغ</string>
+    <string name="report_submitted">تم إرسال البلاغ بنجاح</string>
+    <string name="report_reviewed">سيتم مراجعة بلاغك</string>
+    <string name="report_thank_you">شكراً لمساعدتنا في الحفاظ على مجتمع آمن</string>
+    <string name="pending_reports">بلاغات معلقة</string>
+    <string name="resolved_reports">بلاغات تم حلها</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Trending Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="trending_title">الأكثر رواجاً</string>
+    <string name="trending_in">رائج في %1$s</string>
+    <string name="trending_posts">منشورات</string>
+    <string name="trending_now_title">الأكثر رواجاً الآن</string>
+    <string name="trending_this_week">الأكثر رواجاً هذا الأسبوع</string>
+    <string name="trending_this_month">الأكثر رواجاً هذا الشهر</string>
+    <string name="trending_all_time">الأكثر رواجاً على الإطلاق</string>
+    <string name="trending_hashtag">هاشتاج رائج</string>
+    <string name="trending_topic">موضوع رائج</string>
+    <string name="trending_news_title">أخبار رائجة</string>
+    <string name="trending_people">أشخاص رائجون</string>
+    <string name="number_of_posts">%1$d منشور</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Hashtag Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="hashtag">هاشتاج</string>
+    <string name="hashtags">الهاشتاجات</string>
+    <string name="follow_hashtag">متابعة الهاشتاج</string>
+    <string name="unfollow_hashtag">إلغاء متابعة الهاشتاج</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Media / Story Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="media">الوسائط</string>
+    <string name="all_media">كل الوسائط</string>
+    <string name="photos">الصور</string>
+    <string name="videos">الفيديوهات</string>
+    <string name="story">قصة</string>
+    <string name="stories">القصص</string>
+    <string name="my_story">قصتي</string>
+    <string name="add_to_story">إضافة إلى القصة</string>
+    <string name="create_story">إنشاء قصة</string>
+    <string name="story_expired">انتهت صلاحية القصة</string>
+    <string name="view_all_stories">عرض كل القصص</string>
+    <string name="reply_to_story">الرد على القصة</string>
+    <string name="story_replies">ردود القصة</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Dialog & Alert Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="dialog_warning">تحذير</string>
+    <string name="dialog_error">خطأ</string>
+    <string name="dialog_success">نجاح</string>
+    <string name="dialog_info">معلومة</string>
+    <string name="dialog_are_you_sure">هل أنت متأكد؟</string>
+    <string name="dialog_delete_confirm">سيتم حذف هذا العنصر نهائياً</string>
+    <string name="dialog_logout_title">تسجيل الخروج</string>
+    <string name="dialog_logout_message">هل تريد تسجيل الخروج من حسابك؟</string>
+    <string name="dialog_permission_title">صلاحية مطلوبة</string>
+    <string name="dialog_permission_message">يحتاج التطبيق إلى هذه الصلاحية للعمل بشكل صحيح</string>
+    <string name="dialog_permission_settings">الذهاب إلى الإعدادات</string>
+    <string name="dialog_update_title">تحديث متاح</string>
+    <string name="dialog_update_message">إصدار جديد متاح، يرجى التحديث</string>
+    <string name="dialog_update_now">تحديث الآن</string>
+    <string name="dialog_maintenance_title">صيانة مجدولة</string>
+    <string name="dialog_maintenance_message">التطبيق تحت الصيانة حالياً، يرجى المحاولة لاحقاً</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Permission Strings -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="permission_camera">صلاحية الكاميرا</string>
+    <string name="permission_camera_rationale">يحتاج التطبيق إلى صلاحية الكاميرا لالتقاط الصور والفيديوهات</string>
+    <string name="permission_gallery">صلاحية المعرض</string>
+    <string name="permission_gallery_rationale">يحتاج التطبيق إلى صلاحية المعرض لاختيار الصور والفيديوهات</string>
+    <string name="permission_microphone">صلاحية الميكروفون</string>
+    <string name="permission_microphone_rationale">يحتاج التطبيق إلى صلاحية الميكروفون لتسجيل الرسائل الصوتية</string>
+    <string name="permission_notifications">صلاحية الإشعارات</string>
+    <string name="permission_notifications_rationale">يحتاج التطبيق إلى صلاحية الإشعارات لإرسال التنبيهات</string>
+    <string name="permission_storage">صلاحية التخزين</string>
+    <string name="permission_storage_rationale">يحتاج التطبيق إلى صلاحية التخزين لحفظ الملفات</string>
+    <string name="permission_location">صلاحية الموقع</string>
+    <string name="permission_location_rationale">يحتاج التطبيق إلى صلاحية الموقع لإضافة موقعك للمنشورات</string>
+    <string name="permission_denied">تم رفض الصلاحية</string>
+    <string name="permission_permanently_denied">تم رفض الصلاحية نهائياً، يرجى الذهاب إلى الإعدادات</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Error Messages -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="error_network">خطأ في الشبكة</string>
+    <string name="error_timeout">انتهت مهلة الاتصال</string>
+    <string name="error_server">خطأ في الخادم</string>
+    <string name="error_unknown">خطأ غير معروف</string>
+    <string name="error_upload_failed">فشل رفع الملف</string>
+    <string name="error_download_failed">فشل تحميل الملف</string>
+    <string name="error_image_too_large">الصورة كبيرة جداً</string>
+    <string name="error_video_too_large">الفيديو كبير جداً</string>
+    <string name="error_file_not_supported">نوع الملف غير مدعوم</string>
+    <string name="error_session_expired">انتهت صلاحية الجلسة، يرجى تسجيل الدخول مرة أخرى</string>
+    <string name="error_feature_disabled">هذه الميزة معطلة حالياً</string>
+    <string name="error_under_maintenance">التطبيق تحت الصيانة</string>
+    <string name="error_version_outdated">يرجى تحديث التطبيق للاستمرار</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Empty States -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="empty_posts">لا توجد منشورات بعد</string>
+    <string name="empty_followers">لا يوجد متابعون بعد</string>
+    <string name="empty_following">لا توجد متابَعات بعد</string>
+    <string name="empty_messages">لا توجد رسائل بعد</string>
+    <string name="empty_notifications">لا توجد إشعارات</string>
+    <string name="empty_search">ابدأ بالبحث للعثور على محتوى</string>
+    <string name="empty_saved">لا توجد منشورات محفوظة</string>
+    <string name="empty_archived">لا توجد منشورات مؤرشفة</string>
+    <string name="empty_chats">لا توجد محادثات بعد</string>
+    <string name="empty_blocked">لا يوجد مستخدمون محظورون</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Content Description (Accessibility) -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="content_desc_profile_image">صورة الملف الشخصي</string>
+    <string name="content_desc_cover_image">صورة الغلاف</string>
+    <string name="content_desc_post_image">صورة المنشور</string>
+    <string name="content_desc_post_video">فيديو المنشور</string>
+    <string name="content_desc_send_button">زر الإرسال</string>
+    <string name="content_desc_back_button">زر الرجوع</string>
+    <string name="content_desc_more_options">المزيد من الخيارات</string>
+    <string name="content_desc_verified">حساب موثّق</string>
+    <string name="content_desc_online">متصل الآن</string>
+    <string name="content_desc_media">وسائط</string>
+    <string name="content_desc_reaction">تفاعل</string>
+    <string name="content_desc_notification_badge">شارة الإشعارات</string>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Extra Strings (referenced in layouts) -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <string name="active">نشط</string>
+    <string name="admin">الإدارة</string>
+    <string name="admin_manage_posts">إدارة المنشورات</string>
+    <string name="admin_manage_users">إدارة المستخدمين</string>
+    <string name="agree_terms">أوافق على الشروط والأحكام</string>
+    <string name="all">الكل</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="archive">أرشيف</string>
+    <string name="attach">إرفاق</string>
+    <string name="avatar">الصورة الشخصية</string>
+    <string name="ban">حظر</string>
+    <string name="block">حظر</string>
+    <string name="change_avatar">تغيير الصورة</string>
+    <string name="change_email">تغيير البريد</string>
+    <string name="chats_title">المحادثات</string>
+    <string name="clear_search">مسح البحث</string>
+    <string name="comment">تعليق</string>
+    <string name="contact">تواصل</string>
+    <string name="continue_text">متابعة</string>
+    <string name="cover_photo">صورة الغلاف</string>
+    <string name="create_list">إنشاء قائمة</string>
+    <string name="dark_mode">الوضع الداكن</string>
+    <string name="deactivate">تعطيل</string>
+    <string name="disabled">معطّل</string>
+    <string name="dismiss">إغلاق</string>
+    <string name="email_sent">تم إرسال البريد</string>
+    <string name="email_sent_success_message">تحقق من بريدك الإلكتروني للحصول على رابط إعادة تعيين كلمة المرور</string>
+    <string name="email_sent_success_title">تم الإرسال بنجاح!</string>
+    <string name="emoji">رموز تعبيرية</string>
+    <string name="empty_state">لا توجد بيانات</string>
+    <string name="forgot_password_subtitle">أدخل بريدك الإلكتروني وسنرسل لك رابط لإعادة تعيين كلمة المرور</string>
+    <string name="forgot_password_title">نسيت كلمة المرور؟</string>
+    <string name="gif">GIF</string>
+    <string name="go_to_login">الذهاب لتسجيل الدخول</string>
+    <string name="go_to_register">إنشاء حساب جديد</string>
+    <string name="guest_mode">التصفح كزائر</string>
+    <string name="hint_confirm_password">تأكيد كلمة المرور</string>
+    <string name="hint_email">البريد الإلكتروني</string>
+    <string name="hint_full_name">الاسم الكامل</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="link_preview">معاينة الرابط</string>
+    <string name="list_name">اسم القائمة</string>
+    <string name="login_subtitle">سجل دخولك للمتابعة</string>
+    <string name="login_title">مرحباً بعودتك</string>
+    <string name="more_options">المزيد</string>
+    <string name="navigate">انتقال</string>
+    <string name="new_chat">محادثة جديدة</string>
+    <string name="new_list">قائمة جديدة</string>
+    <string name="no_chats">لا توجد محادثات</string>
+    <string name="no_photos">لا توجد صور</string>
+    <string name="no_posts_available">لا توجد منشورات متاحة</string>
+    <string name="no_posts_found">لم يتم العثور على منشورات</string>
+    <string name="no_posts_hashtag">لا توجد منشورات بهذا الوسم</string>
+    <string name="no_reports">لا توجد بلاغات</string>
+    <string name="no_users_found">لم يتم العثور على مستخدمين</string>
+    <string name="no_videos">لا توجد فيديوهات</string>
+    <string name="pin">تثبيت</string>
+    <string name="post_image">صورة المنشور</string>
+    <string name="profile_picture">الصورة الشخصية</string>
+    <string name="rate">تقييم</string>
+    <string name="record">تسجيل</string>
+    <string name="register_subtitle">أنشئ حسابك الجديد</string>
+    <string name="register_title">إنشاء حساب</string>
+    <string name="report_abuse">إساءة استخدام</string>
+    <string name="report_description_hint">اوصف المشكلة…</string>
+    <string name="report_inappropriate">محتوى غير لائق</string>
+    <string name="report_offensive">محتوى مسيء</string>
+    <string name="report_rights_violation">انتهاك حقوق</string>
+    <string name="report_scam">احتيال</string>
+    <string name="report_title">الإبلاغ عن</string>
+    <string name="reports_pending">قيد المراجعة</string>
+    <string name="reports_rejected">مرفوضة</string>
+    <string name="reports_resolved">تم الحل</string>
+    <string name="reports_reviewed">تمت المراجعة</string>
+    <string name="resend_email">إعادة إرسال البريد</string>
+    <string name="restore">استعادة</string>
+    <string name="review">مراجعة</string>
+    <string name="search_hint_explore">ابحث في المنشورات والمستخدمين…</string>
+    <string name="send_recovery_link">إرسال رابط الاسترداد</string>
+    <string name="sign_in_with_google">تسجيل الدخول بحساب Google</string>
+    <string name="sign_in_with_phone">تسجيل الدخول بالهاتف</string>
+    <string name="sign_up_with_google">التسجيل بحساب Google</string>
+    <string name="submit_report">إرسال البلاغ</string>
+    <string name="syncing_data">جارٍ مزامنة البيانات…</string>
+    <string name="tab_all">الكل</string>
+    <string name="tab_chats">المحادثات</string>
+    <string name="tab_comments">التعليقات</string>
+    <string name="tab_follows">المتابَعون</string>
+    <string name="tab_groups">المجموعات</string>
+    <string name="tab_hashtags">الوسوم</string>
+    <string name="tab_likes">الإعجابات</string>
+    <string name="tab_messages">الرسائل</string>
+    <string name="tab_photos">الصور</string>
+    <string name="tab_users">المستخدمون</string>
+    <string name="thumbnail">صورة مصغرة</string>
+    <string name="verified">موثّق</string>
+    <string name="verify">توثيق</string>
+    <string name="verify_email_subtitle">أدخل الكود المرسل إلى بريدك الإلكتروني</string>
+    <string name="verify_email_title">التحقق من البريد</string>
+    <string name="video_call">مكالمة فيديو</string>
+    <string name="voice_call">مكالمة صوتية</string>
+    <string name="vote">تصويت</string>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootMessages"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_background"
+    android:direction="rtl">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <!-- Title Row with new group icon -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/spacing_16"
+            android:paddingEnd="@dimen/spacing_16"
+            android:paddingTop="@dimen/spacing_12"
+            android:paddingBottom="@dimen/spacing_4">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/chats_title"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold"
+                android:fontFamily="@font/noto_kufi_arabic_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnNewGroup" />
+
+            <ImageButton
+                android:id="@+id/btnNewGroup"
+                android:layout_width="@dimen/icon_touch_target"
+                android:layout_height="@dimen/icon_touch_target"
+                android:src="@drawable/ic_group_add"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/create_group"
+                android:padding="@dimen/spacing_8"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="@color/primary" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- TabLayout: Chats and Groups -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutMessages"
+            style="@style/Widget.Material3.TabLayout.OnSurface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/primary"
+            app:tabIndicatorHeight="@dimen/tab_indicator_height"
+            app:tabSelectedTextColor="@color/primary"
+            app:tabTextColor="@color/text_tertiary"
+            app:tabTextAppearance="@style/TextAppearance.Material3.TitleSmall"
+            app:tabRippleColor="@color/primary_ripple"
+            android:background="@color/surface">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabChats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_chats" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabGroups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_groups" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- ViewPager2 for Chats and Groups -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerChats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!-- Empty State -->
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/appBarMessages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/imageEmptyIcon"
+            android:layout_width="@dimen/empty_state_icon_size"
+            android:layout_height="@dimen/empty_state_icon_size"
+            android:src="@drawable/ic_empty_chats"
+            android:contentDescription="@string/empty_state"
+            android:layout_marginBottom="@dimen/spacing_16"
+            app:tint="@color/text_tertiary" />
+
+        <TextView
+            android:id="@+id/textEmptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_chats"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_body_medium"
+            android:fontFamily="@font/noto_kufi_arabic"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- FAB for new chat -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNewChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_message_add"
+        android:contentDescription="@string/new_chat"
+        app:backgroundTint="@color/primary"
+        app:tint="@android:color/white"
+        app:fabSize="normal"
+        app:fabCustomSize="@dimen/fab_size_small"
+        app:borderWidth="0dp"
+        app:elevation="@dimen/fab_elevation"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginBottom="@dimen/spacing_16" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

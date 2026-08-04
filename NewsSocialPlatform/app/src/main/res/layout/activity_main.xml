@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_background"
+    android:direction="rtl"
+    android:fitsSystemWindows="true">
+
+    <!-- AppBarLayout with Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/surface"
+            app:titleTextColor="@color/text_primary"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleMedium"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layoutDirection="rtl">
+
+            <!-- App Title centered in toolbar -->
+            <TextView
+                android:id="@+id/textToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_toolbar_title"
+                android:textStyle="bold"
+                android:fontFamily="@font/noto_kufi_arabic_bold"
+                android:layout_gravity="center" />
+
+            <!-- Search Icon -->
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="@dimen/icon_touch_target"
+                android:layout_height="@dimen/icon_touch_target"
+                android:src="@drawable/ic_search"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/search"
+                android:padding="@dimen/spacing_12"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/spacing_4" />
+
+            <!-- Notification Bell with Badge -->
+            <FrameLayout
+                android:id="@+id/layoutNotificationBell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/spacing_4">
+
+                <ImageButton
+                    android:id="@+id/btnNotification"
+                    android:layout_width="@dimen/icon_touch_target"
+                    android:layout_height="@dimen/icon_touch_target"
+                    android:src="@drawable/ic_notification_bell"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/notifications"
+                    android:padding="@dimen/spacing_12" />
+
+                <!-- Notification Badge -->
+                <com.google.android.material.badge.BadgeView
+                    android:id="@+id/badgeNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    app:badgeBackgroundColor="@color/error"
+                    app:badgeTextColor="@android:color/white"
+                    app:badgeNumber="0"
+                    app:maxCharacterCount="2"
+                    app:badgeGravity="top|start" />
+
+            </FrameLayout>
+
+            <!-- Dark Mode Toggle -->
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchDarkMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/spacing_4"
+                android:contentDescription="@string/dark_mode"
+                app:thumbTint="@color/surface"
+                app:trackTint="@color/primary"
+                android:visibility="gone" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_nav_height"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!-- Shimmer Loading Overlay covering frame container -->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_nav_height"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:shimmer_base_alpha="0.3"
+        app:shimmer_highlight_alpha="0.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_16">
+
+            <!-- Shimmer placeholder 1 -->
+            <include layout="@layout/item_shimmer_post" />
+
+            <!-- Shimmer placeholder 2 -->
+            <include layout="@layout/item_shimmer_post" />
+
+            <!-- Shimmer placeholder 3 -->
+            <include layout="@layout/item_shimmer_post" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <!-- Floating Action Button (center, create post) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:contentDescription="@string/create_post"
+        app:backgroundTint="@color/primary"
+        app:tint="@android:color/white"
+        app:fabSize="normal"
+        app:fabCustomSize="@dimen/fab_size"
+        app:borderWidth="0dp"
+        app:elevation="@dimen/fab_elevation"
+        app:layout_anchor="@+id/bottomNav"
+        app:layout_anchorGravity="top|center_horizontal"
+        android:layout_marginBottom="@dimen/fab_margin_bottom" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/Widget.Material3.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_nav_height"
+        android:layout_gravity="bottom"
+        android:background="@color/surface"
+        app:elevation="@dimen/bottom_nav_elevation"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:itemActiveIndicatorStyle="@style/ThemeOverlay.Akhbari.BottomNavIndicator"
+        app:menu="@menu/menu_bottom_nav" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

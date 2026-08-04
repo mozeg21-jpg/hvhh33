@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootEmailVerification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_background"
+    android:direction="rtl"
+    android:fitsSystemWindows="true">
+
+    <!-- Lottie Animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieEmailVerification"
+        android:layout_width="@dimen/verification_animation_size"
+        android:layout_height="@dimen/verification_animation_size"
+        app:lottie_rawRes="@raw/animation_email_verification"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toTopOf="@+id/textVerificationTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/spacing_32" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textVerificationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_email_title"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold"
+        android:fontFamily="@font/noto_kufi_arabic_bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textVerificationSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/spacing_32"
+        android:layout_marginEnd="@dimen/spacing_32"
+        android:layout_marginBottom="@dimen/spacing_12" />
+
+    <!-- Subtitle with email -->
+    <TextView
+        android:id="@+id/textVerificationSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_email_subtitle"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_body"
+        android:fontFamily="@font/noto_kufi_arabic"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/spacing_2"
+        app:layout_constraintBottom_toTopOf="@+id/textEmailDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/spacing_32"
+        android:layout_marginEnd="@dimen/spacing_32" />
+
+    <!-- Email Display -->
+    <TextView
+        android:id="@+id/textEmailDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/text_body_medium"
+        android:textStyle="bold"
+        android:fontFamily="@font/noto_kufi_arabic_bold"
+        android:textDirection="ltr"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/spacing_40" />
+
+    <!-- Continue Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/continue_text"
+        android:textSize="@dimen/text_button"
+        android:textStyle="bold"
+        android:fontFamily="@font/noto_kufi_arabic_bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnResend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/spacing_32"
+        android:layout_marginEnd="@dimen/spacing_32"
+        android:layout_marginBottom="@dimen/spacing_12"
+        app:cornerRadius="@dimen/button_corner_radius"
+        app:backgroundTint="@color/primary" />
+
+    <!-- Resend Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResend"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_email"
+        android:textSize="@dimen/text_body_small"
+        android:fontFamily="@font/noto_kufi_arabic"
+        app:layout_constraintBottom_toTopOf="@+id/textChangeEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/spacing_8"
+        android:textColor="@color/primary" />
+
+    <!-- Change Email -->
+    <TextView
+        android:id="@+id/textChangeEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_email"
+        android:textColor="@color/text_tertiary"
+        android:textSize="@dimen/text_body_small"
+        android:fontFamily="@font/noto_kufi_arabic"
+        android:padding="@dimen/spacing_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/spacing_48" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

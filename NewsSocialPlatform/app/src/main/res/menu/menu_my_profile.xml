@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_edit_profile"
+        android:icon="@drawable/ic_edit"
+        android:title="تعديل الملف الشخصي" />
+
+    <item
+        android:id="@+id/action_share_profile"
+        android:icon="@drawable/ic_share"
+        android:title="مشاركة الملف الشخصي" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="الإعدادات" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="تسجيل الخروج" />
+
+</menu>

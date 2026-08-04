@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootExplore"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_background"
+    android:direction="rtl">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarExplore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <!-- Search Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutSearch"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:layout_marginBottom="@dimen/spacing_8"
+            app:startIconDrawable="@drawable/ic_search"
+            app:startIconTint="@color/text_tertiary"
+            app:boxCornerRadiusTopStart="@dimen/input_corner_radius_large"
+            app:boxCornerRadiusTopEnd="@dimen/input_corner_radius_large"
+            app:boxCornerRadiusBottomStart="@dimen/input_corner_radius_large"
+            app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius_large"
+            app:boxStrokeColor="@color/divider"
+            app:boxBackgroundColor="@color/surface_variant">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_hint_explore"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/text_body"
+                android:fontFamily="@font/noto_kufi_arabic" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TabLayout -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutExplore"
+            style="@style/Widget.Material3.TabLayout.OnSurface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="@color/primary"
+            app:tabIndicatorHeight="@dimen/tab_indicator_height"
+            app:tabSelectedTextColor="@color/primary"
+            app:tabTextColor="@color/text_tertiary"
+            app:tabTextAppearance="@style/TextAppearance.Material3.TitleSmall"
+            app:tabRippleColor="@color/primary_ripple"
+            android:background="@color/surface">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_all" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_users" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabHashtags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_hashtags" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_photos" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

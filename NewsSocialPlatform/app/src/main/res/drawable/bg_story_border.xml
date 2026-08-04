@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradient stroke ring (outer) -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#1A73E8"
+                android:endColor="#E91E63"
+                android:angle="0" />
+            <stroke
+                android:width="3dp"
+                android:color="#1A73E8" />
+        </shape>
+    </item>
+
+    <!-- Inner circle (cut out to show content behind) -->
+    <item
+        android:left="3dp"
+        android:top="3dp"
+        android:right="3dp"
+        android:bottom="3dp">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+</layer-list>

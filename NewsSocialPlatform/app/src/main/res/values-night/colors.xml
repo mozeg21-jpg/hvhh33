@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Dark Theme Color Overrides -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="card">#2C2C2C</color>
+    <color name="card_border">#3C3C3C</color>
+
+    <!-- Text Colors (Dark) -->
+    <color name="text_primary">#E0E0E0</color>
+    <color name="text_secondary">#A0A0A0</color>
+    <color name="text_hint">#707070</color>
+    <color name="text_disabled">#505050</color>
+
+    <!-- Divider (Dark) -->
+    <color name="divider">#333333</color>
+    <color name="divider_light">#2A2A2A</color>
+
+    <!-- Primary Light (Dark variant) -->
+    <color name="primary_light">#1A3A5C</color>
+    <color name="secondary_light">#3E2723</color>
+
+    <!-- Status Colors (Dark backgrounds) -->
+    <color name="error_light">#3E2723</color>
+    <color name="success_light">#1B3E1B</color>
+    <color name="warning_light">#3E3514</color>
+    <color name="info_light">#1A3A5C</color>
+
+    <!-- Shimmer (Dark) -->
+    <color name="shimmer_base">#2C2C2C</color>
+    <color name="shimmer_highlight">#3C3C3C</color>
+
+    <!-- Navigation (Dark) -->
+    <color name="nav_background">#1E1E1E</color>
+    <color name="nav_inactive">#707070</color>
+
+    <!-- Overlay (Dark adjusted) -->
+    <color name="overlay_dark">#CC000000</color>
+    <color name="overlay_light">#1AFFFFFF</color>
+</resources>

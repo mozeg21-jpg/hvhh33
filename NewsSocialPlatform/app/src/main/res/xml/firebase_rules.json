@@ -1,0 +1,152 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".write": "$uid === auth.uid",
+        ".read": "auth != null"
+      }
+    },
+
+    "posts": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+
+    "comments": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+
+    "likes": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+
+    "reactions": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+
+    "followers": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+
+    "following": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+
+    "notifications": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    "messages": {
+      "$chatId": {
+        ".read": "root.child('chats').child($chatId).child('participants').child(auth.uid).exists()",
+        ".write": "root.child('chats').child($chatId).child('participants').child(auth.uid).exists()"
+      }
+    },
+
+    "chats": {
+      "$chatId": {
+        ".read": "data.child('participants').child(auth.uid).exists()",
+        ".write": "auth != null"
+      }
+    },
+
+    "groups": {
+      "$groupId": {
+        ".read": "data.child('members').child(auth.uid).exists()",
+        ".write": "auth != null"
+      }
+    },
+
+    "reports": {
+      ".read": "root.child('users').child(auth.uid).child('role').val() === 'admin'",
+      ".write": "auth != null"
+    },
+
+    "saved_posts": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    "hashtags": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+
+    "trending": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+
+    "settings": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    "media": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+
+    "analytics": {
+      ".read": "root.child('users').child(auth.uid).child('role').val() === 'admin'",
+      ".write": "root.child('users').child(auth.uid).child('role').val() === 'admin'"
+    },
+
+    "admin_logs": {
+      ".read": "root.child('users').child(auth.uid).child('role').val() === 'admin'",
+      ".write": "root.child('users').child(auth.uid).child('role').val() === 'admin'"
+    },
+
+    "verification": {
+      "$uid": {
+        ".read": "root.child('users').child(auth.uid).child('role').val() === 'admin'",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    "blocks": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    "mutes": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    "sessions": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    "devices": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    "app_config": {
+      ".read": true,
+      ".write": "root.child('users').child(auth.uid).child('role').val() === 'admin'"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootNotifications"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_background"
+    android:direction="rtl">
+
+    <!-- TabLayout for notification filters -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutNotifications"
+        style="@style/Widget.Material3.TabLayout.OnSurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/primary"
+        app:tabIndicatorHeight="@dimen/tab_indicator_height"
+        app:tabSelectedTextColor="@color/primary"
+        app:tabTextColor="@color/text_tertiary"
+        app:tabTextAppearance="@style/TextAppearance.Material3.TitleSmall"
+        app:tabRippleColor="@color/primary_ripple"
+        android:background="@color/surface">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_all" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_likes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_comments" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabFollows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_follows" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_messages" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- SwipeRefreshLayout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutNotifications"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Notifications RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/spacing_4"
+            android:paddingBottom="@dimen/spacing_16" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Empty State -->
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutNotifications"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageEmptyIcon"
+            android:layout_width="@dimen/empty_state_icon_size"
+            android:layout_height="@dimen/empty_state_icon_size"
+            android:src="@drawable/ic_empty_notifications"
+            android:contentDescription="@string/empty_state"
+            android:layout_marginBottom="@dimen/spacing_16"
+            app:tint="@color/text_tertiary" />
+
+        <TextView
+            android:id="@+id/textEmptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_notifications"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_body_medium"
+            android:fontFamily="@font/noto_kufi_arabic"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

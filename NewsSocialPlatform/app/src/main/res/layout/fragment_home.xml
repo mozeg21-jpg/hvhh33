@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_background"
+    android:direction="rtl">
+
+    <!-- Sync Banner (gone initially) -->
+    <LinearLayout
+        android:id="@+id/syncBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/primary_light_8"
+        android:paddingStart="@dimen/spacing_16"
+        android:paddingEnd="@dimen/spacing_16"
+        android:paddingTop="@dimen/spacing_8"
+        android:paddingBottom="@dimen/spacing_8"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressSync"
+            android:layout_width="@dimen/progress_small"
+            android:layout_height="@dimen/progress_small"
+            android:layout_marginEnd="@dimen/spacing_12"
+            android:indeterminateTint="@color/primary" />
+
+        <TextView
+            android:id="@+id/textSyncStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/syncing_data"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_caption"
+            android:fontFamily="@font/noto_kufi_arabic" />
+
+    </LinearLayout>
+
+    <!-- SwipeRefreshLayout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Stories Row (gone initially) -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerStories"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stories_row_height"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/spacing_16"
+                android:paddingEnd="@dimen/spacing_16"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Divider below stories -->
+            <View
+                android:id="@+id/dividerStories"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_1"
+                android:background="@color/divider"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerStories" />
+
+            <!-- Posts RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPosts"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/spacing_8"
+                app:layout_constraintTop_toBottomOf="@+id/dividerStories"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Empty State -->
+            <LinearLayout
+                android:id="@+id/emptyState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageEmptyIcon"
+                    android:layout_width="@dimen/empty_state_icon_size"
+                    android:layout_height="@dimen/empty_state_icon_size"
+                    android:src="@drawable/ic_empty_posts"
+                    android:contentDescription="@string/empty_state"
+                    android:layout_marginBottom="@dimen/spacing_16"
+                    app:tint="@color/text_tertiary" />
+
+                <TextView
+                    android:id="@+id/textEmptyState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_posts_available"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_body_medium"
+                    android:fontFamily="@font/noto_kufi_arabic"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Night Theme – Applied via values-night/colors.xml -->
+    <!-- This file defines the dark theme variant. Place this -->
+    <!-- content in values-night/themes.xml for automatic switching, -->
+    <!-- or keep here if only dark mode is desired. -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!--
+    Dark theme color overrides are in values-night/colors.xml
+    and are automatically applied when the system/app switches to
+    night mode. The AppTheme in styles.xml references @color/...
+    resources which resolve to dark variants in values-night/.
+
+    If you need a separate dark theme definition, copy the
+    AppTheme style below to values-night/themes.xml.
+
+    <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/text_on_secondary</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/nav_background</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Primary</item>
+        <item name="materialCardViewStyle">@style/Widget.App.Card.Elevated</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+        <item name="tabStyle">@style/Widget.App.TabLayout</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigation</item>
+        <item name="chipStyle">@style/Widget.App.Chip</item>
+    </style>
+    -->
+</resources>

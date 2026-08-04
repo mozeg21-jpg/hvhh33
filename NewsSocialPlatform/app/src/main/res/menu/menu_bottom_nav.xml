@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="الرئيسية" />
+    <item
+        android:id="@+id/nav_explore"
+        android:icon="@drawable/ic_explore"
+        android:title="استكشاف" />
+    <item
+        android:id="@+id/nav_create"
+        android:icon="@drawable/ic_add"
+        android:title="إنشاء" />
+    <item
+        android:id="@+id/nav_messages"
+        android:icon="@drawable/ic_messages"
+        android:title="الرسائل" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_heart_outline"
+        android:title="الملف الشخصي" />
+</menu>
